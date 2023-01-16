@@ -17,7 +17,7 @@
       rel="stylesheet"
     />
 
-    <title>Zadanie domowe №4</title>
+    <title>Zadanie domowe №5</title>
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
@@ -51,7 +51,7 @@
       <section class="section background_image_title">
         <div class="container">
           <h1 class="title_section_h1">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
-          <button class="title_section_button" type="button">Zamów usługe</button>
+          <button type="button" class="title_section_button" data-modal-open>Zamów usługe</button>
         </div>
       </section>
 
@@ -369,5 +369,11 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="close-btn" data-modal-close></button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
