@@ -300,7 +300,7 @@ header {
 }
 .aur_clients-a:hover,
 .aur_clients-a:focus {
-  --color3: var(--link_and_button_color);
+  color: var(--link_and_button_color);
   border-color: var(--link_and_button_color);
   outline: none;
 }
