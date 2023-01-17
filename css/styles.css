@@ -51,9 +51,6 @@ button {
   margin: 0 auto;
   padding: 0 15px;
 }
-.padding_top_0 {
-  padding-top: 0;
-}
 header {
   padding: 25px 0;
   align-items: center;
@@ -109,11 +106,10 @@ header {
   margin-left: auto;
 }
 .header_contact_icon {
-  fill: currentColor;
   vertical-align: middle;
-  --color2: currentColor;
+  margin-right: 10px;
 }
-.header_kontact_link {
+.icon_link_color {
   color: #757575;
 }
 .header_list {
@@ -220,11 +216,10 @@ header {
   bottom: 0;
   width: 100%;
   height: 70px;
-  background-color: #2f303a;
+  background: rgba(47, 48, 58, 0.8);
   display: flex;
   align-items: center;
   justify-content: center;
-  opacity: 0.8;
 }
 .our_team {
   text-align: center;
@@ -253,21 +248,20 @@ header {
 }
 /* ⬇ <<social media icons>> ⬇ */
 .social-media {
+  color: #afb1b8;
   border-radius: 50%;
   display: flex;
   width: 44px;
   height: 44px;
   justify-content: center;
   align-items: center;
+  transition: color, 250ms, cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-media:hover,
 .social-media:focus {
   background-color: var(--link_and_button_color);
-  --color3: var(--letters_and_logo_color_white);
+  color: var(--letters_and_logo_color_white);
   outline: none;
-}
-.fill_currentColor_svg {
-  fill: currentColor;
 }
 .social-media-box {
   display: flex;
@@ -287,9 +281,6 @@ header {
   color: #757575;
   letter-spacing: 0.03em;
 }
-.fill_currentColor_svg > use {
-  fill: currentColor;
-}
 .aur_clients {
   display: flex;
   justify-content: center;
@@ -297,6 +288,7 @@ header {
   gap: 30px;
 }
 .aur_clients-a {
+  color: #afb1b8;
   border: 1px solid currentColor;
   border-radius: 4px;
   width: 170px;
@@ -304,7 +296,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #afb1b8;
+  transition: color, 250ms, cubic-bezier(0.4, 0, 0.2, 1);
 }
 .aur_clients-a:hover,
 .aur_clients-a:focus {
@@ -312,7 +304,6 @@ header {
   border-color: var(--link_and_button_color);
   outline: none;
 }
-
 footer {
   background: #2f303a;
   line-height: 24px;
@@ -399,8 +390,10 @@ address > a:hover {
   letter-spacing: 0.03em;
   font-family: inherit;
   padding: 6px 25px;
+  transition: color, 250ms, cubic-bezier(0.4, 0, 0.2, 1);
 }
-.TB_list > button:hover {
+.TB_list > button:hover,
+.TB_list > button:focus {
   background-color: var(--link_and_button_color);
   color: var(--letters_and_logo_color_white);
 }
@@ -476,6 +469,7 @@ address > a:hover {
 .Port_list_shadow {
   display: block;
   color: inherit;
+  transition: color, 250ms, cubic-bezier(0.4, 0, 0.2, 1);
 }
 .Port_list_shadow:hover,
 .Port_list_shadow:focus {
@@ -496,6 +490,7 @@ address > a:hover {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.1);
+  transition: color, 250ms, cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal {
@@ -517,7 +512,9 @@ address > a:hover {
   background-color: #fff;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
-  cursor: pointer;
+  border: 1px solid #0000001a;
+  color: var(--letters_and_logo_color_black);
+  font-size: 20px;
 }
 
 .is-hidden {
